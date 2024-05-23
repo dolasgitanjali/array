@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array</h1>
+
+    <script>
+        const names =["omkar","sujal","vipul","aditya","amol"];
+        document.write(names);
+        console.log("Array Elements are :");
+        console.log(names);
+    
+        console.log("Element of 3rd index:");
+        console.log(names[3]);
+
+        console.log("Length of array :");
+        console.log(names.length);
+
+        console.log("index of element (vipul) in array :");
+        console.log(names.indexOf("vipul"));
+
+        console.log("Replace element using index:");
+        names[3]="yash";
+        console.log(names);
+
+        console.log("Add element at end using Push function:");
+        names.push("aditya");
+        console.log(names); 
+        
+        console.log("Remove last element using Pop function:");
+        names.pop();
+        console.log(names); 
+
+        console.log("Add element at start position using unshift function:");
+        names.unshift("aditya");
+        console.log(names); 
+
+        console.log("remove element at start position using shift function:");
+        names.shift();
+        console.log(names); 
+
+        console.log("Add and delete elements at once using splice function:");
+        names.splice( 3 , 1 , "aditya" ,"rohan");
+        console.log(names); 
+
+        console.log("array to string using join function :");
+        console.log(names.join("  "));
+
+        console.log("reverse the array using reverse function :");
+        console.log(names.reverse());
+
+        console.log("sort array in ascending using sort function :");
+        console.log(names.sort());
+
+        console.log("sort array in decending using sort function :");
+        console.log(names.sort().reverse());
+
+    </script>
+</body>
+</html>
